@@ -33,6 +33,7 @@ contract PomodoroCore is ZamaEthereumConfig {
     event UserInitialized(address indexed user);
 
     /// @notice Initialize a new user with default daily target (2 hours)
+    /// @dev Sets up encrypted fields and initializes user state
     function initializeUser() external {
         require(!userRecords[msg.sender].initialized, "User already initialized");
         
