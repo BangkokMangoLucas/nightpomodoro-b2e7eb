@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "NightPomodoro - Private Focus Tracking",
   description: "Track your focus time privately on-chain with FHEVM encryption",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
