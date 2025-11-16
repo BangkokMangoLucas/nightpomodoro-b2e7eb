@@ -17,6 +17,7 @@ contract PomodoroNFT is ZamaEthereumConfig {
     }
 
     /// @notice Core contract reference
+    /// @dev Set once during deployment
     address public coreContract;
 
     /// @notice Badge definitions

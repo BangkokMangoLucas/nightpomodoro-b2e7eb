@@ -218,6 +218,8 @@ contract PomodoroCore is ZamaEthereumConfig {
     }
 
     /// @notice Check if user is initialized
+    /// @param user Address to check
+    /// @return Whether the user has been initialized
     function isUserInitialized(address user) external view returns (bool) {
         return userRecords[user].initialized;
     }
